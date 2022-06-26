@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/165808d943.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Booki</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img
+          class="header-logo"
+          src="./assets/logo/Booki.png"
+          alt="logo bleu du site booki"
+        />
+        <nav class="header-nav">
+          <span class="nav"><a href="#">Hébergements</a></span>
+          <a class="nav" href="#">Activités</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="mainHeader">
+          <div class="mainHeader-wrap">
+            <h1 class="mainHeader-title">
+              Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p class="mainHeader-text">
+              En plein centre ville ou en pleine nature
+            </p>
+
+            <form action="#" class="searchBar">
+              <label for="siteSearch"
+                ><i class="fa-xl fa-solid fa-location-dot locationIcon"></i
+              ></label>
+              <input
+                type="search"
+                id="siteSearch"
+                placeholder="Marseille, France"
+              />
+              <button class="searchButton">
+                <span class="searchText">Rechercher</span
+                ><i class="fa-solid fa-magnifying-glass searchIcon"></i>
+              </button>
+            </form>
+          </div>
+          <div class="mainFooter">
+            <div class="mainFooter-wrap">
+              <h2 class="mainFooter-title">Filtres</h2>
+              <div class="filters">
+                <i class="filterIcon fa-solid fa-money-bill-wave"></i>
+                <span class="filters-text">Économique</span>
+              </div>
+              <div class="filters">
+                <i class="filterIcon fa-solid fa-child-reaching"></i>
+                <span class="filters-text">Familial</span>
+              </div>
+              <div class="filters">
+                <i class="filterIcon fa-solid fa-heart"></i>
+                <span class="filters-text">Romantique</span>
+              </div>
+              <div class="filters">
+                <i class="filterIcon fa-solid fa-dog"></i>
+                <span class="filters-text">Animaux autorisés</span>
+              </div>
+            </div>
+            <div class="info">
+              <i class="fa-solid fa-info"></i>
+              <span
+                >Plus de 500 logements sont disponibles dans cette ville.</span
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
