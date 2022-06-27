@@ -13,6 +13,13 @@ a:hover {
   color: inherit;
 }
 
+li {
+  list-style-type: none;
+}
+ul {
+  padding-inline-start: 0;
+}
+
 /* Variables */
 :root {
   --main-color: #0065fc;
@@ -23,15 +30,18 @@ a:hover {
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
 .wrapper {
-  width: 90%;
+  width: 100%;
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
-  column-gap: 50px;
+  justify-content: space-around;
+  row-gap: 50px;
 }
 /* -------------- */
 /* --- HEADER --- */
@@ -88,7 +98,11 @@ body {
 /* -------------- */
 /* ---- MAIN ---- */
 /* -------------- */
-
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
 /* Main Header */
 .mainHeader {
   display: flex;
@@ -165,12 +179,21 @@ body {
 .mainFooter-title {
   font-size: 16px;
 }
+.filters-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .filters {
   display: flex;
   align-items: center;
   border: 2px solid var(--bcg-color);
   border-radius: 50px;
   column-gap: 15px;
+}
+.filters:hover {
+  cursor: pointer;
+  background-color: var(--bcg-color);
+  color: var(--main-color);
 }
 .filterIcon {
   width: 40px;
@@ -197,11 +220,155 @@ body {
   min-height: 30px;
   color: var(--main-color);
   border-radius: 50%;
-  border: 2px solid red;
+  border: 2px solid var(--bcg-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Results */
+
+.searchResults {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hostingResults {
+  padding: 20px;
+  flex-basis: 66%;
+  background-color: var(--bcg-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.hostingResults-containerCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+.hostingResults-card {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px #adadad;
+  -webkit-box-shadow: 5px 5px 15px 5px #adadad;
+  border-radius: 20px;
+  padding: 15px;
+}
+.hostingResults-card:hover {
+  box-shadow: 5px 5px 15px 5px var(--second-color);
+  -webkit-box-shadow: 5px 5px 15px 5px var(--second-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-img img {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.card-content p,
+h4 {
+  margin: 5px;
+  padding-left: 5px;
+}
+.hostingResults-card-note {
+  padding-left: 10px;
+  color: var(--main-color);
+}
+.no-note {
+  color: var(--bcg-color);
+}
+.hostingResults-more {
+  font-weight: 600;
+}
+.hostingResults-more:hover {
+  color: var(--main-color);
+}
+
+.popularResults {
+  padding: 20px;
+  flex-basis: 33%;
+  background-color: var(--bcg-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popularResults-title {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1400px) {
+  .hostingResults-card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 968px) {
+  .searchResults {
+    flex-direction: column-reverse;
+  }
+  .hostingResults-card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hostingResults-containerCard {
+    justify-content: center;
+  }
+  .hostingResults-card {
+    width: 90%;
+  }
+}
+/* Activity */
+.activityResults {
+  background-color: var(--bcg-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
 /* -------------- */
 /* --- FOOTER --- */
 /* -------------- */
+.footer {
+  display: flex;
+  column-gap: 10%;
+  padding-left: 10%;
+  background-color: var(--bcg-color);
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  margin-bottom: 0;
+}
+.footer a:hover {
+  color: var(--main-color);
+}
+.footer li {
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+}

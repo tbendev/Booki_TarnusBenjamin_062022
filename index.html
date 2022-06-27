@@ -19,19 +19,27 @@
   </head>
   <body>
     <div class="wrapper">
+      <!------------>
+      <!-- HEADER -->
+      <!------------>
       <header class="header">
+        <!-- HEADER-Logo -->
         <img
           class="header-logo"
           src="./assets/logo/Booki.png"
           alt="logo bleu du site booki"
         />
+        <!-- HEADER-Nav -->
         <nav class="header-nav">
-          <span class="nav"><a href="#">Hébergements</a></span>
-          <a class="nav" href="#">Activités</a>
+          <span class="nav"><a href="#hosting">Hébergements</a></span>
+          <a class="nav" href="#activity">Activités</a>
         </nav>
       </header>
-
+      <!---------->
+      <!-- MAIN -->
+      <!---------->
       <main class="main">
+        <!-- MAIN-Header -->
         <section class="mainHeader">
           <div class="mainHeader-wrap">
             <h1 class="mainHeader-title">
@@ -59,21 +67,23 @@
           <div class="mainFooter">
             <div class="mainFooter-wrap">
               <h2 class="mainFooter-title">Filtres</h2>
-              <div class="filters">
-                <i class="filterIcon fa-solid fa-money-bill-wave"></i>
-                <span class="filters-text">Économique</span>
-              </div>
-              <div class="filters">
-                <i class="filterIcon fa-solid fa-child-reaching"></i>
-                <span class="filters-text">Familial</span>
-              </div>
-              <div class="filters">
-                <i class="filterIcon fa-solid fa-heart"></i>
-                <span class="filters-text">Romantique</span>
-              </div>
-              <div class="filters">
-                <i class="filterIcon fa-solid fa-dog"></i>
-                <span class="filters-text">Animaux autorisés</span>
+              <div class="filters-wrap">
+                <div class="filters">
+                  <i class="filterIcon fa-solid fa-money-bill-wave"></i>
+                  <span class="filters-text">Économique</span>
+                </div>
+                <div class="filters">
+                  <i class="filterIcon fa-solid fa-child-reaching"></i>
+                  <span class="filters-text">Familial</span>
+                </div>
+                <div class="filters">
+                  <i class="filterIcon fa-solid fa-heart"></i>
+                  <span class="filters-text">Romantique</span>
+                </div>
+                <div class="filters">
+                  <i class="filterIcon fa-solid fa-dog"></i>
+                  <span class="filters-text">Animaux autorisés</span>
+                </div>
               </div>
             </div>
             <div class="info">
@@ -84,9 +94,178 @@
             </div>
           </div>
         </section>
+        <section class="searchResults">
+          <div class="hostingResults" id="hosting">
+            <div class="hostingResults-title">
+              <h3>Hébergement à Marseille</h3>
+            </div>
+            <div class="hostingResults-containerCard">
+              <div class="hostingResults-card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="Photo chambre Auberge La Cannebière avec lit superposé"
+                  />
+                </div>
+                <div class="card-content">
+                  <div>
+                    <h4>Auberge La Cannebière</h4>
+                    <p>Nuit à partir de <strong>25€</strong></p>
+                  </div>
+                  <div class="hostingResults-card-note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star no-note"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="hostingResults-card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    alt="Photo chambre Hôtel du port avec deux lits"
+                  />
+                </div>
+                <div class="card-content">
+                  <div>
+                    <h4>Hôtel du port</h4>
+                    <p>Nuit à partir de <strong>52€</strong></p>
+                  </div>
+                  <div class="hostingResults-card-note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="hostingResults-card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt="Photo chambre Hôtel Les mouettes avec lit et placard"
+                  />
+                </div>
+                <div class="card-content">
+                  <div>
+                    <h4>Hôtel Les mouettes</h4>
+                    <p>Nuit à partir de <strong>76€</strong></p>
+                  </div>
+                  <div class="hostingResults-card-note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star no-note"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="hostingResults-card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    alt="Photo chambre Hôtel de la mer avec lit double ambiance bleu et blanc"
+                  />
+                </div>
+                <div class="card-content">
+                  <div>
+                    <h4>Hôtel de la mer</h4>
+                    <p>Nuit à partir de <strong>46€</strong></p>
+                  </div>
+                  <div class="hostingResults-card-note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star no-note"></i>
+                    <i class="fa-solid fa-star no-note"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="hostingResults-card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    alt="Photo chambre Auberge Le Panier avec plusieurs lits superposés"
+                  />
+                </div>
+                <div class="card-content">
+                  <div>
+                    <h4>Auberge Le Panier</h4>
+                    <p>Nuit à partir de <strong>23€</strong></p>
+                  </div>
+                  <div class="hostingResults-card-note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star no-note"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="hostingResults-card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    alt="Photo chambre Hôtel chez Amina avec lit bureau et télévision"
+                  />
+                </div>
+                <div class="card-content">
+                  <div>
+                    <h4>Hôtel chez Amina</h4>
+                    <p>Nuit à partir de <strong>96€</strong></p>
+                  </div>
+                  <div class="hostingResults-card-note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hostingResults-more"><a href="#">Afficher plus</a></div>
+          </div>
+          <div class="popularResults">
+            <h3 class="popularResults-title">
+              Les plus populaires <i class="fa-solid fa-star"></i>
+            </h3>
+          </div>
+        </section>
+        <section class="activityResults" id="activity">
+          <h3>Activités à Marseille</h3>
+        </section>
       </main>
-
-      <footer></footer>
     </div>
+    <!------------>
+    <!-- FOOTER -->
+    <!------------>
+    <footer class="footer">
+      <div class="footer-section">
+        <h4 class="footer-title">A propos</h4>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Nos hébergements</h4>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Assistance</h4>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
