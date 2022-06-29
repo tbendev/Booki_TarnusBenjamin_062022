@@ -33,7 +33,7 @@ ul {
 /* Body */
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -445,9 +445,6 @@ h4 {
 }
 
 @media screen and (max-width: 500px) {
-  .popularResults-card {
-    height: 150px;
-  }
   .hostingResults-containerCard {
     justify-content: center;
   }
@@ -459,7 +456,7 @@ h4 {
 /* Activity */
 
 .activityResults {
-  height: 40em;
+  height: 40%;
 }
 
 .activityCard-container {
@@ -517,6 +514,45 @@ h4 {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
+@media screen and (max-width: 1024px) {
+  .activityCard-container {
+    flex-direction: column;
+  }
+  .activityCard {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+  }
+  .activityCard-wrapped,
+  .activityCard-wraped {
+    width: 48%;
+  }
+  .activityCard-wrap:nth-child(2) {
+    flex-direction: row;
+  }
+  .activityCard-wrap:last-of-type {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .activityResults {
+    padding: 20px;
+  }
+  .activityCard-wrap {
+    row-gap: 20px;
+  }
+  .activityCard-wrapped,
+  .activityCard-wraped {
+    width: 100%;
+  }
+  .activityCard-wrap:nth-child(2) {
+    flex-direction: column;
+  }
+  .activityCard-wrap:last-of-type {
+    flex-direction: column;
+  }
+}
+
 /* -------------- */
 /* --- FOOTER --- */
 /* -------------- */
